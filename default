@@ -1,0 +1,9 @@
+server {
+  listen 80;
+  server_name nc.local.oic.io;
+
+  location / {
+    proxy_pass http://simplesite2.serv15.oic.io/;
+    proxy_redirect off;
+  }
+}
